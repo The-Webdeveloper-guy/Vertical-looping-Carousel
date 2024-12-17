@@ -1,0 +1,90 @@
+CSS Code Used in the Video
+Carousel 1
+.image1 {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(214.99999999999997, 238.99999999999997, 66.99999999999997, 0.17);
+    animation: looping 15s infinite linear;
+}
+
+#column1 {
+    width: 200px;
+    height: 700px;
+    max-height: 700px;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), black 20%, black 80%, rgba(0, 0, 0, 0));
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), black 20%, black 80%, rgba(0, 0, 0, 0));
+}
+
+@keyframes looping {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+Carousel 2
+.image2 {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(214.99999999999997, 238.99999999999997, 66.99999999999997, 0.17);
+    animation: looping 16s linear 0s infinite none reverse;
+     animation-direction: reverse;
+}
+
+#column2    {
+    max-height: 700px;
+    height: 700px;
+    width: 200px;
+
+    -webkit-mask-image: linear-gradient(transparent, black 20%, black 80%, transparent 100%);
+    mask-image: linear-gradient(transparent, black 20%, black 80%, transparent 100%);
+}
+
+@keyframes looping{
+0% {
+    transform: translateY(0px);
+}
+100% {
+    transform: translateY(-100%);
+}
+}
+
+Carousel 3
+.image3 {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(214.99999999999997, 238.99999999999997, 66.99999999999997, 0.17);
+    animation: looping 20s linear 0s infinite none;
+
+}
+
+
+#column3  {
+    max-height: 700px;
+    height: 700px;
+    width: 200px;
+    -webkit-mask-image: linear-gradient(transparent, black 20%, black 80%, transparent 100%);
+    mask-image: linear-gradient(transparent, black 20%, black 80%, transparent 100%);
+
+}
+
+@keyframes looping{
+0% {
+    transform: translateY(0px);
+}
+100% {
+    transform: translateY(-100%);
+}
+}
+
+Responsive Code
+(add to entire page custom CSS)
+@media only screen and (max-width: 360px) {
+    #column1, #column2, #column3 {
+        width: 100px;
+        height: 350px;
+        max-height: 350px;
+    }
+}
+
+
